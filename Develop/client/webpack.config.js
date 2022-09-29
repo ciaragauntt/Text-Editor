@@ -21,7 +21,7 @@ module.exports = () => {
       //adding webpack plugin to generate HTML
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'text-editor'
+        title: 'JATE'
       }),
       // adding workbox plugins for service workers
       new InjectManifest({
@@ -32,8 +32,8 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'text-editor',
-        short_name: 'Text',
+        name: 'JATE',
+        short_name: 'JATE',
         description: 'We love an editor!',
         background_color: '#225ca3',
         theme_color: '#225cs3',
